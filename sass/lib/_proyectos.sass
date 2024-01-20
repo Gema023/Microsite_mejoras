@@ -1,0 +1,61 @@
+.portada_proyectos
+    width: 100%
+    margin: 40px 0px
+    height: 500px
+    overflow: hidden
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+.container3_proyectos
+    display: flex
+    justify-content: space-between
+    margin: 40px 0px
+    p, div
+        width: 45%
+    .texto_proyectos
+        margin: 0
+        
+
+.container_imagen_proyectos
+    width: 100%
+    height: 700px
+    overflow: hidden
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+.grid_proyectos
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    column-gap: 15px
+    row-gap: 15px
+
+.container_imagenes_proyectos
+    width: 100%
+    overflow: hidden
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+
+
+
+main
+    width: 95%
+    margin: 0 auto
+
+@media screen and (max-width:600px)
+    .container3_proyectos
+        flex-direction: column
+        p, div
+            width: 100%
+            padding: 20px 0px
+
+    .grid_proyectos
+        display: grid
+        grid-template-columns: repeat(1, 1fr)
+        row-gap: 0
